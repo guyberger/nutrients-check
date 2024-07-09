@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nutrition Check</h1>
+        <div class="slider-container">
+            <label for="servingSize">Serving Size (g): <input type="number" id="servingSizeValue" value="100"></label>
+            <input type="range" id="servingSize" min="0" max="1000" value="100" step="1" oninput="updateValue('servingSize')">
+        </div>
+        <div class="slider-container">
+            <label for="totalFat">Total Fat (g): <input type="number" id="totalFatValue" value="0"></label>
+            <input type="range" id="totalFat" min="0" max="100" value="0" step="0.1" oninput="updateValue('totalFat')">
+        </div>
+        <div class="slider-container">
+            <label for="saturatedFat">Saturated Fat (g): <input type="number" id="saturatedFatValue" value="0"></label>
+            <input type="range" id="saturatedFat" min="0" max="100" value="0" step="0.1" oninput="updateValue('saturatedFat')">
+        </div>
+        <div class="slider-container">
+            <label for="transFat">Trans Fat (g): <input type="number" id="transFatValue" value="0"></label>
+            <input type="range" id="transFat" min="0" max="10" value="0" step="0.1" oninput="updateValue('transFat')">
+        </div>
+        <div class="slider-container">
+            <label for="cholesterol">Cholesterol (mg): <input type="number" id="cholesterolValue" value="0"></label>
+            <input type="range" id="cholesterol" min="0" max="300" value="0" step="1" oninput="updateValue('cholesterol')">
+        </div>
+        <div class="slider-container">
+            <label for="sodium">Sodium (mg): <input type="number" id="sodiumValue" value="0"></label>
+            <input type="range" id="sodium" min="0" max="2300" value="0" step="10" oninput="updateValue('sodium')">
+        </div>
+        <div class="slider-container">
+            <label for="totalCarbs">Total Carbohydrates (g): <input type="number" id="totalCarbsValue" value="0"></label>
+            <input type="range" id="totalCarbs" min="0" max="300" value="0" step="1" oninput="updateValue('totalCarbs')">
+        </div>
+        <div class="slider-container">
+            <label for="dietaryFiber">Dietary Fiber (g): <input type="number" id="dietaryFiberValue" value="0"></label>
+            <input type="range" id="dietaryFiber" min="0" max="50" value="0" step="0.1" oninput="updateValue('dietaryFiber')">
+        </div>
+        <div class="slider-container">
+            <label for="protein">Protein (g): <input type="number" id="proteinValue" value="0"></label>
+            <input type="range" id="protein" min="0" max="100" value="0" step="0.1" oninput="updateValue('protein')">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
